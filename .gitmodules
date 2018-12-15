@@ -1,0 +1,3 @@
+[submodule "3rd-party/loguru"]
+	path = 3rd-party/loguru
+	url = https://github.com/cryptogogue/loguru.git

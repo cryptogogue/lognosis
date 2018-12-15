@@ -1,0 +1,340 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		CD6C9AC021C479C2009A3801 /* Logger.cpp in Sources */ = {isa = PBXBuildFile; fileRef = CD6C9ABD21C479C2009A3801 /* Logger.cpp */; };
+		CD6C9AC121C479C2009A3801 /* Logger.h in Headers */ = {isa = PBXBuildFile; fileRef = CD6C9ABE21C479C2009A3801 /* Logger.h */; };
+		CD6C9AC221C479C2009A3801 /* loguru.cpp in Sources */ = {isa = PBXBuildFile; fileRef = CD6C9ABF21C479C2009A3801 /* loguru.cpp */; };
+		CDA06FE52155C4CF003FA0C3 /* loguru.hpp in Headers */ = {isa = PBXBuildFile; fileRef = CDA06FE42155C4CF003FA0C3 /* loguru.hpp */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		CD4E818F21059316007DA585 /* liblognosis.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = liblognosis.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		CD6C9ABD21C479C2009A3801 /* Logger.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = Logger.cpp; path = src/lognosis/Logger.cpp; sourceTree = "<group>"; };
+		CD6C9ABE21C479C2009A3801 /* Logger.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Logger.h; path = src/lognosis/Logger.h; sourceTree = "<group>"; };
+		CD6C9ABF21C479C2009A3801 /* loguru.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = loguru.cpp; path = src/lognosis/loguru.cpp; sourceTree = "<group>"; };
+		CDA06FE42155C4CF003FA0C3 /* loguru.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; name = loguru.hpp; path = "3rd-party/loguru/loguru.hpp"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		CD4E817F21059316007DA585 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		CD5C62F320B4F7A70038EE98 /* src */ = {
+			isa = PBXGroup;
+			children = (
+				CD6C9ABD21C479C2009A3801 /* Logger.cpp */,
+				CD6C9ABE21C479C2009A3801 /* Logger.h */,
+				CD6C9ABF21C479C2009A3801 /* loguru.cpp */,
+			);
+			name = src;
+			sourceTree = "<group>";
+		};
+		CD9345B92093EB140077BAD4 = {
+			isa = PBXGroup;
+			children = (
+				CDED581320BA1EF7003A2969 /* 3rd-party */,
+				CD5C62F320B4F7A70038EE98 /* src */,
+				CD9345C32093EB140077BAD4 /* Products */,
+				CDED584020BA2008003A2969 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		CD9345C32093EB140077BAD4 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				CD4E818F21059316007DA585 /* liblognosis.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		CDA06FE32155C4B3003FA0C3 /* loguru */ = {
+			isa = PBXGroup;
+			children = (
+				CDA06FE42155C4CF003FA0C3 /* loguru.hpp */,
+			);
+			name = loguru;
+			sourceTree = "<group>";
+		};
+		CDED581320BA1EF7003A2969 /* 3rd-party */ = {
+			isa = PBXGroup;
+			children = (
+				CDA06FE32155C4B3003FA0C3 /* loguru */,
+			);
+			name = "3rd-party";
+			sourceTree = "<group>";
+		};
+		CDED584020BA2008003A2969 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		CD4E818021059316007DA585 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CD6C9AC121C479C2009A3801 /* Logger.h in Headers */,
+				CDA06FE52155C4CF003FA0C3 /* loguru.hpp in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		CD4E817521059316007DA585 /* lib-lognosis */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CD4E818C21059316007DA585 /* Build configuration list for PBXNativeTarget "lib-lognosis" */;
+			buildPhases = (
+				CD4E817621059316007DA585 /* Sources */,
+				CD4E817F21059316007DA585 /* Frameworks */,
+				CD4E818021059316007DA585 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "lib-lognosis";
+			productName = "lib-simple-cpp-router";
+			productReference = CD4E818F21059316007DA585 /* liblognosis.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		CD9345BA2093EB140077BAD4 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0930;
+				ORGANIZATIONNAME = "Patrick Meehan";
+				TargetAttributes = {
+					CD4E817521059316007DA585 = {
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = CD9345BD2093EB140077BAD4 /* Build configuration list for PBXProject "lognosis" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = CD9345B92093EB140077BAD4;
+			productRefGroup = CD9345C32093EB140077BAD4 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				CD4E817521059316007DA585 /* lib-lognosis */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		CD4E817621059316007DA585 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CD6C9AC021C479C2009A3801 /* Logger.cpp in Sources */,
+				CD6C9AC221C479C2009A3801 /* loguru.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		CD4E818D21059316007DA585 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = BUD786NAA6;
+				EXECUTABLE_PREFIX = lib;
+				PRODUCT_NAME = lognosis;
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		CD4E818E21059316007DA585 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = BUD786NAA6;
+				EXECUTABLE_PREFIX = lib;
+				PRODUCT_NAME = lognosis;
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		CD9345C72093EB140077BAD4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "c++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = NO;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_STYLE = Manual;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"_DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = (
+					src,
+					"3rd-party/loguru",
+				);
+				LIBRARY_SEARCH_PATHS = "";
+				MACOSX_DEPLOYMENT_TARGET = 10.12;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				OTHER_CPLUSPLUSFLAGS = (
+					"$(OTHER_CFLAGS)",
+					"-Wno-documentation-deprecated-sync",
+				);
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		CD9345C82093EB140077BAD4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "c++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = NO;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_STYLE = Manual;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = (
+					src,
+					"3rd-party/loguru",
+				);
+				LIBRARY_SEARCH_PATHS = "";
+				MACOSX_DEPLOYMENT_TARGET = 10.12;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_CPLUSPLUSFLAGS = (
+					"$(OTHER_CFLAGS)",
+					"-Wno-documentation-deprecated-sync",
+				);
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		CD4E818C21059316007DA585 /* Build configuration list for PBXNativeTarget "lib-lognosis" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CD4E818D21059316007DA585 /* Debug */,
+				CD4E818E21059316007DA585 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CD9345BD2093EB140077BAD4 /* Build configuration list for PBXProject "lognosis" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CD9345C72093EB140077BAD4 /* Debug */,
+				CD9345C82093EB140077BAD4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = CD9345BA2093EB140077BAD4 /* Project object */;
+}

@@ -1,0 +1,5 @@
+bin/
+/doxydocs/
+xcuserdata/
+*.pbxuser
+*.perspectivev3

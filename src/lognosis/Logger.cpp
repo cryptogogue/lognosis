@@ -84,6 +84,9 @@ void init ( int argc, char **argv ) {
 
     loguru::g_stderr_verbosity = loguru::Verbosity_MAX;
     loguru::init ( argc, argv, NULL );
+    loguru::g_preamble = false;
+    
+    useCurrentFilterForAllNewThreads ();
 }
 
 //----------------------------------------------------------------//

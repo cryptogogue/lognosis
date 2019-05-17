@@ -2,6 +2,7 @@
 // http://cryptogogue.com
 
 #include <map>
+#include <memory>
 #include <mutex>
 #include <string>
 

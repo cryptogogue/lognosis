@@ -7,7 +7,6 @@
 
 using namespace std;
 
-#include <loguru.hpp>
 #include <lognosis/Logger.h>
 
 namespace Lognosis {

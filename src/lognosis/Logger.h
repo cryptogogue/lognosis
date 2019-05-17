@@ -4,7 +4,7 @@
 #ifndef LOGNOSIS_LOGGER_H
 #define LOGNOSIS_LOGGER_H
 
-#include "../../3rd-party/loguru/loguru.hpp"
+#include <loguru/loguru.hpp>
 
 #define LGN_LOG(key, verbosity_name, ...)                                                                   \
     if ( Lognosis::filter ( key, ( Lognosis::Verbosity )loguru::Verbosity_ ## verbosity_name )) {           \

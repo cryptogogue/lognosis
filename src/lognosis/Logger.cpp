@@ -84,10 +84,10 @@ void init ( int argc, char **argv ) {
 
     loguru::g_stderr_verbosity = loguru::Verbosity_MAX;
     
-    loguru::g_preamble          = true;
+    loguru::g_preamble          = false;
     
-    loguru::g_preamble_date     = true;
-    loguru::g_preamble_time     = true;
+    loguru::g_preamble_date     = false;
+    loguru::g_preamble_time     = false;
     loguru::g_preamble_uptime   = false;
     loguru::g_preamble_thread   = false;
     loguru::g_preamble_file     = false;

@@ -6,16 +6,21 @@
 
 #include <loguru/loguru.hpp>
 
-#define LGN_LOG(key, verbosity_name, ...)                                                                   \
-    if ( Lognosis::filter ( key, ( Lognosis::Verbosity )loguru::Verbosity_ ## verbosity_name )) {           \
-        VLOG_F ( loguru::Verbosity_ ## verbosity_name, __VA_ARGS__ );                                       \
+#define LGN_LOG(key, verbosity_name, ...)                                           \
+    {                                                                               \
+        loguru::Verbosity verbosity = loguru::Verbosity_ ## verbosity_name;         \
+        if ( Lognosis::filter ( key, ( Lognosis::Verbosity )verbosity )) {          \
+            (( verbosity ) > loguru::current_verbosity_cutoff())                    \
+                ? (void)0                                                           \
+                : loguru::log(verbosity, __FILE__, __LINE__, key, __VA_ARGS__);     \
+        }                                                                           \
     }
 
-#define LGN_LOG_SCOPE(key, verbosity_name, ...)                                                             \
-    loguru::LogScopeRAII LOGURU_ANONYMOUS_VARIABLE ( error_context_RAII_ ) =                                \
-    ( !Lognosis::filter ( key, ( Lognosis::Verbosity )loguru::Verbosity_ ## verbosity_name ))               \
-        ? loguru::LogScopeRAII ()                                                                           \
-        : loguru::LogScopeRAII ( loguru::Verbosity_ ## verbosity_name, __FILE__, __LINE__, __VA_ARGS__ )
+#define LGN_LOG_SCOPE(key, verbosity_name, ...)                                                                 \
+    loguru::LogScopeRAII LOGURU_ANONYMOUS_VARIABLE ( error_context_RAII_ ) =                                    \
+    ( !Lognosis::filter ( key, ( Lognosis::Verbosity )loguru::Verbosity_ ## verbosity_name ))                   \
+        ? loguru::LogScopeRAII ()                                                                               \
+        : loguru::LogScopeRAII ( loguru::Verbosity_ ## verbosity_name, __FILE__, __LINE__, key, __VA_ARGS__ )
 
 namespace Lognosis {
 

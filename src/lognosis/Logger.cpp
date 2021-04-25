@@ -18,7 +18,6 @@ namespace Lognosis {
 class LogFilter {
 public:
     
-    static thread_local unique_ptr < LogFilter > sSingleton;
     static LogFilter sMaster;
     static mutex sMasterMutex;
     
@@ -39,7 +38,7 @@ public:
         static thread_local unique_ptr < LogFilter > filter;
         
         if ( !filter ) {
-        
+            
             filter = make_unique < LogFilter >();
             
             sMasterMutex.lock ();
@@ -65,7 +64,6 @@ public:
     }
 };
 
-thread_local unique_ptr < LogFilter > LogFilter::sSingleton;
 LogFilter LogFilter::sMaster;
 mutex LogFilter::sMasterMutex;
 

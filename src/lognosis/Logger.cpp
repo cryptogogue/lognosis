@@ -1,6 +1,7 @@
 // Copyright (c) 2017-2018, Cryptogogue Inc. All Rights Reserved.
 // http://cryptogogue.com
 
+#include <limits.h>
 #include <map>
 #include <memory>
 #include <mutex>
@@ -166,7 +167,7 @@ void rotateLogFiles () {
     stat ( current.c_str (), &buffer0 );
     stat ( current.c_str (), &buffer1 );
     
-    if (( buffer0.st_size < sLogFileMaxSizeInBytes ) && ( buffer1.st_size < sLogFileMaxSizeInBytes )) return;
+    if ((( size_t )buffer0.st_size < sLogFileMaxSizeInBytes ) && (( size_t )buffer1.st_size < sLogFileMaxSizeInBytes )) return;
     
     loguru::remove_callback ( current.c_str ());
     loguru::remove_callback ( currentErr.c_str ());

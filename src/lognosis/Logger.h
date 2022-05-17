@@ -36,6 +36,8 @@ namespace Lognosis {
 //----------------------------------------------------------------//
 bool        filter                                  ( const char* key, Verbosity verbosity );
 void        init                                    ( int argc, char **argv );
+void        initLogFiles                            ( const char* logFilePath, const char* logFileName, size_t historyLength = 5, size_t maxSizeInBytes = 1024 * 1024 );
+void        rotateLogFiles                          ();
 void        setFilter                               ( const char* filter, Verbosity verbosity );
 void        useCurrentFilterForAllNewThreads        ();
 
